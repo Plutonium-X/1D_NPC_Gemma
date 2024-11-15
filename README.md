@@ -3,4 +3,5 @@
 Elle vous attend sur les docks, près de l'eau.
 
 Particularité :
-Dialogue de rencontre, dialogue de renvoi, et c'est à peu-près tout.
+
+- Dialogue de rencontre, dialogue de renvoi, et c'est à peu-près tout.
