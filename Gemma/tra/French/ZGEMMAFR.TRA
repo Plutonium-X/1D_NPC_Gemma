@@ -1,0 +1,83 @@
+/*Numérotation des lignes comme suit : lignes commençant par 1 : Gemma. lignes commençant par 2 : PJ. Autres chiffres : autres NPCs
+Lignes dont le deuxième chiffre est un 1 : dialogues entre le PJ et Gemma initiés par Gemma. lignes dont le deuxième chiffre est un 2 : banters entre Gemma et PNJs du groupe. lignes dont le deuxième chiffre est un 3 : dialogues entre Gemma et le PJ initiés par le PJ.
+Troisième et quatrième chiffre : ID du dialogue
+Cinquième, sixième et septième chiffre : ID de la ligne*/
+//Dialogues de recrutement : 01
+@1301000=~Interrogée sur son passé, GEMMA grogne méchamment et semble prête à vous frapper sur le côté du crâne à coup de marteau. C'est avec réluctance qu'elle accepte de céder venir d'une enclave naine des collines située non loin de la côte, qu'elle a rapidement fui une fois sa vocation de prêtresse d'Umberlie trouvée. Gemma parle en termes dédaigneux de sa famille, et, sans entrer dans les détails, évoque une révélation puissante qui l'a menée sur la voie de prêtresse.~
+@1301001=~Vous, là ! Oui, vous ! Êtes-vous heureux de la vie d'hérétique que vous menez ?! ~
+@2301001=~Je-~
+@1301002=~Osez me regarder en face et répondez-moi ! ~
+@2301002=~J'aimerais-~
+@1301003=~Allez-y ! J'attends ! Ne tremblez-vous pas, la nuit ?! N'avez-vous aucun respect ?! ~
+@2301003=~Si je-~
+@1301004=~REPONDEZ-MOI !~
+@2301004=~VOLONTIERS, SI JE POUVAIS EN PLACER UNE !~
+@1301005=~(La naine croise les bras d'un air impatient.) Je n'ai pas à écouter les élucubrations d'imbéciles persuadés d'être le centre du monde. Les dieux nous observent, vous savez !~
+@2301005=~Hein ?~
+@1301006=~Craignez-les ! Et entre tous, craignez la Dame de ces rivages ! N'entendez-vous pas son souffle ? C'est celui de la mer ! Si vous êtes encore debout, c'est parce qu'elle a jugé digne de ne pas briser vos jambes d'une lame vengeresse.~
+@2301006=~Ah, vous voulez parler d'Umberlie ? La Reine Garce ?~
+@2301007=~Quoi ?~
+@2301008=~C'est... très gentil de sa part. Je vais y aller maintenant. Je suis en retard pour... présenter mes respects aux dieux et tout ça. Excusez-moi.~
+@2301009=~Cette ville est un vrai dépotoir à illuminés fanatiques, on dirait...~
+@1301007=~Umberlie ! Oui ! Craignez son courroux. (Elle paraît se calmer un peu, et se met même à sourire.) Il faut juste que vous sachiez. Les marins d'ici sont horriblement imprudents... persuadés que supplier Talos suffira à les sauver. Ah ! En mer, rien n'épargne les hérétiques de la colère d'Umberlie.~
+@2301010=~Je vais donc supposer que vous êtes une adoratrice ? C'est inhabituel, pour une naine, de vénérer une divinité marine.~
+@2301011=~Je pensais que Talos était le maître d'Umberlie ?~
+@2301012=~Très instructif. Maintenant, si vous voulez bien m'excuser...~
+@1301008=~Illuminée ?! Espèce de fou ! Si vous ne prenez pas garde, Umberlie vous jettera à bas et vous noiera dans ses grands bras d'eau salée ! ~
+@2301013=~Très honnêtement ? Je viens de faire de la bouillie d'un Cyrinishade complètement fou, quelques mètres plus loin. Alors sincèrement, épargnez-moi votre prêchi-prêcha et retournez vous coucher.~
+@2301014=~J'ai réussi à détruire un culte entier d'adorateurs d'Yeux-Tyrans. Je ne pense pas qu'une fanatique isolée soit un vrai problème. ~
+@2301015=~Heu, bon, je m'en vais, hein... ~
+@2301016=~Oubliez ça. Je m'excuse. Mais qu'est-ce qui peut bien amener une naine à devenir adoratrice d'une divinité marine ?~
+@2301017=~Je ne vois pas Umberlie, juste une garce miniature qui me postillonne dessus. ~
+@1301009=~Adoratrice ?! Plus qu'adoratrice ! Je suis Gemma Fer-Sel, prêtresse de la Reine Garce ! Partout où je vais, je prêche, et je préviens les mortels du courroux de ma Dame ! ~
+@2301018=~Oui, mais pourquoi ? ~
+@2301019=~Je vois ça. Au moins, je doute qu'on puisse dire que vous manquez de zèle. ~
+@1301010=~Ah ! C'est peut-être ce qu'il croit, l'agitateur de brises, mais en mer, Umberlie est seule maîtresse... et z'aurez noté que la mer, c'est plutôt grand. Ceux qui s'en remettent à Talos n'ont jamais connu de vraie tempête. Umberlie se libérera de ses chaînes.~
+@2301020=~On ne peut pas dire que vous manquiez de zèle~
+@1301011=~Ah, mais vous l'aurez voulu, hérétique ! UMBERLIE !~
+@1301012=~Umberlie est la plus belle, la plus grande, et la plus terrifiante. Les idiots incapables de percevoir la beauté terrible de l'océan et de la rage des tempêtes peuvent bien rester à miner des cailloux, mais j'ai fait mon choix ! La mer m'a appelée, m'a brisée, et m'a reconstruite pour que je prêche sa parole ! ~
+@2301021=~Vous êtes une prêtresse errante, hein ? Ça vous dirait de rejoindre mon groupe ? Vous avez l'air de savoir vous battre. ~
+@2301022=~Hé bien, c'est vrai qu'une fois, mon père m'a donné un poisson dans un bocal, pour m'occuper. C'était magnifique et terrible. Je comprend. ~
+@1301013=~Si je sais me battre ?! Ah ! Ma seule arme est la rhétorique implacable ! Incidemment, j'ai appelé mon marteau Rhétorique Implacable. (Elle sourit à pleine dents.) Si ça me donne l'occasion de convertir en passant quelques crânes... ouais, pourquoi pas ? Pourquoi pas... ~
+@2301023=~Je n'ai pas de place pour toi dans le groupe pour le moment, mais peux-tu attendre ici ?~
+@2301024=~Je n'ai pas de place pour toi dans le groupe pour le moment, mais peux-tu aller attendre à la Couronne de Cuivre, dans les Bas Quartiers ?~
+@2301025=~Avant de partir, je dois te prévenir que je pourchasse un mage du nom d'Irenicus. Cela pourrait être très dangereux.~
+@2301026=~Avant de partir, je dois te prévenir que je cherche à secourir une amie d'enfance, Imoen. Cela pourrait être très dangereux. ~
+@1301014=~C'est ça, riez. Vous rirez moins lorsque vos poumons seront gorgés d'eau.~
+@1301015=~Ouais, j'ferai ça, ça manque pas de marins stupides ici, y'a de quoi s'occuper.~
+@1301016=~(Elle renifle avec dédain.) Sûr, j'ai envie d'aller me faire chier dans un trou un rat pour vos beaux yeux... 'me devrez la note, ça c'est certain.~
+@1301017=~Et c'est censé me faire peur ? Allez, gamin, ton mage, je lui ferai avaler quelques litres d'eau salée, on verra s'il arrive à nous cracher ses sorts à la figure après ça. ~
+@1301018=~(Elle sourit d'un air cynique.) Comme c'est miiignoooon...  bon, on y va ou on traînasse ?~
+@1301019=~Craignez Umberlie ! Gloire à la Reine Garce !~
+@1301020=~Tiens, une tête connue. T'fais bien de revenir, à attendre ici j'avais presque envie de me mettre à aller te chercher pour que ma Rhétorique t'explique aimablement c'que je pense de toi.~
+@2301027=~Toujours aussi aimable, à ce que je vois. Allez, viens, le taux de naines psychotiques dans mon équipe est dangereusement bas.~
+@2301028=~Oh ? Et bien tu patienteras encore un peu, désolé. Je ne peux pas te reprendre dans mon groupe tout de suite. ~
+
+//Dialogues de personnage viré : 02
+@1302001=~C'est ça, débarrasse-toi de moi ! Je reviendrai, crois-moi, et je ne serai pas de bonne humeur...~
+@2302001=~Tu n'es JAMAIS de bonne humeur.  J'ai juste besoin que tu attendes un peu ici. ~
+@2302002=~Voilà dix pièces d'or, va te payer une bière à la Couronne de Cuivre ou quelque chose, bon sang... j'ai juste besoin de me séparer de toi pour le moment.~
+@2302003=~Très bien, je n'ai rien dit, reste. ~
+@1302002=~C'est ça. Je vais compter le nombre de manières avec lesquelles je pourrais te tuer, en attendant. ~
+@1302003=~Une bière ?! Tu m'prends pour quoi, une naine péquenaude des montagnes ?!~
+@2302004=~*Soupir* Très bien, paie-toi... un seau d'eau salée, si tu préfères... peu importe, du moment que tu m'attends là-bas.~
+@1302004=~Excellent choix.~
+@1302005=~Hmpf.~
+
+/*@=~~
+@=~~
+@=~~
+@=~~
+@=~~
+@=~~
+@=~~
+@=~~
+@=~~
+@=~~
+@=~~
+@=~~
+@=~~
+@=~~
+@=~~
+@=~~*/
+

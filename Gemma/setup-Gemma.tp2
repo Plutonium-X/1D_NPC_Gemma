@@ -1,0 +1,45 @@
+BACKUP ~Gemma/backup~
+AUTHOR ~Zyl~
+
+ALWAYS
+ ACTION_DEFINE_ARRAY tra_reload BEGIN ZGemmafr END
+ LAF HANDLE_CHARSETS
+ INT_VAR
+ infer_charset = 1
+ STR_VAR
+ tra_path = EVAL ~%MOD_FOLDER%/tra~
+ reload_array = tra_reload
+ END
+ END
+ 
+LANGUAGE ~Francais~
+         ~french~
+         ~Gemma/tra/french/ZGemmafr.tra~
+
+
+BEGIN ~Gemma~
+REQUIRE_FILE ~Data/25Dialog.bif~ ~You do not appear to have TOB installed.~
+
+ACTION_IF GAME_IS ~TOB BGT~ THEN BEGIN 
+	COPY ~Gemma/cre/#ZGemmaL.bmp~ ~Override/#ZGemmaL.bmp~
+	COPY ~Gemma/cre/#ZGemmaS.bmp~ ~Override/#ZGemmaS.bmp~
+END
+ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN 
+	COPY ~Gemma/cre/EE/#ZGemmaL.bmp~ ~Override/#ZGemmaL.bmp~
+	COPY ~Gemma/cre/EE/#ZGemmaS.bmp~ ~Override/#ZGemmaS.bmp~
+END
+COPY ~Gemma/cre/#ZGemma.cre~ ~Override/#ZGemma.cre~
+SAY NAME1 ~Gemma~
+SAY NAME2 ~Gemma~
+SAY BIO @1301000
+
+COMPILE ~Gemma/scripts/#ZGemma.baf~
+
+COMPILE ~Gemma/dialogues/#ZGemma.d~
+
+EXTEND_TOP ~Ar0300.bcs~ ~Gemma/scripts/Ar0300.baf~
+
+APPEND ~pdialog.2da~
+~#ZGemma #ZGemmaP~
+UNLESS ~#ZGemma~
+

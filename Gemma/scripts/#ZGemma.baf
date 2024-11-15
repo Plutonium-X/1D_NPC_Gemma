@@ -1,0 +1,24 @@
+IF
+See([PC])
+NumTimesTalkedTo(0)
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END
+
+IF
+Global("#ZGemmaenemy","GLOBAL",1)
+THEN
+RESPONSE #100
+Enemy()
+Attack(NearestEnemyOf())
+END
+
+IF
+Global("#ZGemmacoppercoronet","GLOBAL",1)
+THEN
+RESPONSE #100
+TakePartyGold(10)
+EscapeAreaMove("AR0406",1010,1493,2) //Effet indésirable : Gemma disparaît des Docks immédiatement pour aller à la CC. Escape() suivi d'un EscapeAreaMove() ne marche pas non plus, dans ce cas elle n'apparaît pas à la CC.
+SetGlobal("#ZGemmacoppercoronet","GLOBAL",2)
+END

@@ -1,0 +1,8 @@
+IF
+Global("#ZGemmaexists","AR0300",0)
+THEN
+RESPONSE #100
+SetGlobal("#ZGemmaexists","AR0300",1)
+CreateCreature("#ZGemma",[2075.3286],1)
+
+END
