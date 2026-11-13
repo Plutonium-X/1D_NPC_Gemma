@@ -16,6 +16,9 @@ LANGUAGE ~Francais~
          ~french~
          ~Gemma/tra/french/ZGemmafr.tra~
 
+LANGUAGE ~Schinese~
+         ~schinese~
+         ~Gemma/tra/schinese/ZGemmafr.tra~
 
 BEGIN ~Gemma~
 REQUIRE_FILE ~Data/25Dialog.bif~ ~You do not appear to have TOB installed.~
